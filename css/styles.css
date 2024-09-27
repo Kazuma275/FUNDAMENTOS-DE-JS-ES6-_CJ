@@ -1,3 +1,13 @@
+/*
+
+/* 
+    #FFE66D
+    #FF6B6B
+    #F7FFF7
+    #4ECDC4
+    #1A535C
+/*
+
 /******************** IDs ********************/
 
 #sergio{
@@ -17,24 +27,25 @@ body {
 /******************** Clases ********************/
 
 .header {
-    background-color: #A4BEF3;
+    background-color: #4ECDC4;
     opacity: 0.5;
     text-align: center;
     padding: 5px;
-    color: rgb(255,250,250,0.90);
+    color: white;
     text-shadow: 2px 2px 4px rgb(0,0,0,0.75);
+    font-weight: bolder;
 }
 
 .topnav {
     overflow: hidden;
-    background-color: #87A0B2;
+    background-color: #1A535C;
     opacity: 0.85;
 }
 
 .topnav a {
     float: left;
     display: block;
-    color: #684A52;
+    color: #F7FFF7;
     text-shadow: 2px 2px 4px rgb(0,0,0,0.75);
     text-align: center;
     padding: 14px 16px;
@@ -43,7 +54,7 @@ body {
 
 .topnav a:hover {
     background-color: rgb(128,128,128,0.25);
-    color: rgb(255,215,0,0.75);
+    color: #4ECDC4;
 }
 
 .container {
@@ -66,6 +77,8 @@ body {
 .cardTitle {
     font-size: 24px;
     padding: 10px 10px 0 10px;
+    background-color: #1A535C;
+    color: white;
 }
 
 .cardBody {
@@ -74,7 +87,7 @@ body {
 }
 
 .cardFooter {
-    background: rgb(50,205,50,0.25);
+    background: white;
     border-radius: 0 0 15px 15px;
     padding: 10px;
     text-align: center;
@@ -82,7 +95,7 @@ body {
 
 .cardFooter a {
     text-decoration: none;
-    color: rgb(0,0,255,0.80);
+    color: #FF6B6B;
     text-shadow: 2px 2px 4px rgb(0,0,0,0.25);
 }
     /* Responsive */
@@ -93,7 +106,7 @@ body {
     }
 
 .footer {
-    background-color: #857885;
+    background-color: #1A535C;
     opacity: 0.5;
     text-align: center;
     padding: 20px;
