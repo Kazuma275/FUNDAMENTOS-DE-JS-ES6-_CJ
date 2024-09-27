@@ -3,38 +3,32 @@
 <h2>Indice</h2>
 <ul>
   <li><a href="#introduccion">Introducción</a></li>
-  <li><a href="#motivacion">Motivación</a></li>
   <li><a href="#estructura">Estructura</a></li>
   <li><a href="#estilo">Estilo</a></li>
 </ul>
 
 <h2 id="introduccion">Introducción</h2>
 <p>Trabajo realizado por: Sergio Ramos Alarcón </p>
-<p>Proyecto de web "from scratch" de 1ª evaluación de Lenguajes de Marcas</p>
+<p>Proyecto de web de FUNDAMENTOS-DE-JS-ES6</p>
 <p>Diciembre de 2023 </p>
 <p>Licencia CC-BY</p>
 
-<h2 id="motivacion">Motivación</h2>
-<p>El tema lo he elegido porque de pequeño era muy fan de este equipo de baloncesto y creo que hacer esta página web es para hacerle un hueco en mi corazón </p>
 
 <h2 id="estructura">Estructura</h2>
 <p>La web está dividida en  X secciones:</p>
 <ul>
-  <li>Home (Hero Section)</li>  
-  <li>Introducción </li>
-  <li>Description </li>
-  <li>Footer </li>
+  <li>Header</li>  
+  <li>Navbar</li>
+  <li>Body</li>
+  <li>Footer</li>
 </ul>
 
 
 <h2>Introducción</h2>
-<img src="./img/accordion.PNG" alt="imagen del accordion" style="width:25%"> <img src="./img/celtics.png" alt="imagen del escudo" style="width:25%">
+
 <p>He añadido un header con mi nombre y el título de los ejercicios.</p>
 <p>Posteriormente he hecho una barra de navegación con herramientas y la colección de ejercicios.</p>
 <p>En el body he añadido el ejercicio correspondiente de la plantilla 3</p>
-
-<br>
-
 
 <h2>Footer</h2>
 <h4>Menú vertical central</h4>
