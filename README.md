@@ -21,7 +21,7 @@
 <p>En el body he añadido el ejercicio correspondiente de la plantilla 3</p>
 
 <h2 id="estructura">Estructura</h2>
-<p>La web está dividida en  X secciones:</p>
+<p>La web está dividida en 4 secciones:</p>
 <ul>
   <li>Header</li>  
   <li>Navbar</li>
