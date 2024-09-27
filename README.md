@@ -3,6 +3,7 @@
 <h2>Indice</h2>
 <ul>
   <li><a href="#introduccion">Introducción</a></li>
+  <li><a href="#resumen">Resumen</a></li>
   <li><a href="#estructura">Estructura</a></li>
   <li><a href="#estilo">Estilo</a></li>
 </ul>
@@ -10,9 +11,14 @@
 <h2 id="introduccion">Introducción</h2>
 <p>Trabajo realizado por: Sergio Ramos Alarcón </p>
 <p>Proyecto de web de FUNDAMENTOS-DE-JS-ES6</p>
-<p>Diciembre de 2023 </p>
+<p>Septiembre de 2024 </p>
 <p>Licencia CC-BY</p>
 
+<h2 id="resumen">Resumen</h2>
+
+<p>He añadido un header con mi nombre y el título de los ejercicios.</p>
+<p>Posteriormente he hecho una barra de navegación con herramientas y la colección de ejercicios.</p>
+<p>En el body he añadido el ejercicio correspondiente de la plantilla 3</p>
 
 <h2 id="estructura">Estructura</h2>
 <p>La web está dividida en  X secciones:</p>
@@ -22,13 +28,6 @@
   <li>Body</li>
   <li>Footer</li>
 </ul>
-
-
-<h2>Introducción</h2>
-
-<p>He añadido un header con mi nombre y el título de los ejercicios.</p>
-<p>Posteriormente he hecho una barra de navegación con herramientas y la colección de ejercicios.</p>
-<p>En el body he añadido el ejercicio correspondiente de la plantilla 3</p>
 
 <h2>Footer</h2>
 <h4>Menú vertical central</h4>
@@ -43,7 +42,7 @@
     <li>#4ECDC4</li>
     <li>#1A535C</li>
     <li>black</li>
-    <li>white<li> 
+    <li>white</li> 
 </p>
 
 <h3>Tipografías (Boostrap)</h3>
