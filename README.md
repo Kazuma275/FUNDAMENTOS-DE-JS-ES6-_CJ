@@ -22,62 +22,32 @@
 <ul>
   <li>Home (Hero Section)</li>  
   <li>Introducción </li>
-  <li>Trophies </li>
-  <li>Video </li>
-  <li>Coaching Staff </li>
-  <li>Gallery </li>
+  <li>Description </li>
   <li>Footer </li>
 </ul>
 
-<h2>Hero Section</h2>
-<img src="./img/cabecera.jpg" alt="imagen de la hero section" style="width:50%">
-<p>He utilizado una imagen de fondo tomada de una aportación de un fan, tiene una buena resolución y encaja perfectamente con la temática de mi página web.<br>
-Encima de la imagen he colocado un botón que <br>
-(una breve explicación)</p>
-
-<br>
 
 <h2>Introducción</h2>
 <img src="./img/accordion.PNG" alt="imagen del accordion" style="width:25%"> <img src="./img/celtics.png" alt="imagen del escudo" style="width:25%">
-<p>He dispuesto en un grid de 2 columnas, en una he puesto un accordion, y en la otra la imagen del escudo del equipo.</p>
+<p>He añadido un header con mi nombre y el título de los ejercicios.</p>
+<p>Posteriormente he hecho una barra de navegación con herramientas y la colección de ejercicios.</p>
+<p>En el body he añadido el ejercicio correspondiente de la plantilla 3</p>
 
 <br>
 
-<h2>Trophies</h2>
-<p>He añadido los trofeos más relevantes para mí del equipo en un grid de 4 columnas y dentro sus respectivas cards, con su título y su pequeña descripción</p>
-
-<br>
-
-<h2> Video </h2>
-<p>He añadido un vídeo de presentación del club de esta temporada. Está dentro de una card </p>
-
-<br>
-
-<h2> Coaching Staff </h2>
-<p>He hecho un apartado parecido como el de trophies. Un grid de 4 columnas y cards para cada miembro del staff</p>
-
-<br>
-
-<h2> Gallery </h2>
-<p>He añadido una galería mediante uso de clases y a estes le he añadido la propiedad flex.</p>
-
-<br>
 
 <h2>Footer</h2>
-<h4>Menú vertical izquierdo</h4>
-<p>En el footer he incluido un apartado de redes sociales (facebook, twitter, instagram, linkedin), los cuales al hacer click encima de sus respectivas imágenes le llevará a las redes sociales oficiales del equipo de baloncesto. Además he incluido un apartado denomidado "Site oficial" que le llevará directamente a la página web oficial. Por último he añadido un apartado de créditos que funciona con una ventana emergente (modal).</p>
-
-<h4>Menú vertical derecho</h4>
-<p>He implementado un pequeño menú vertical con todas los apartados de la página web por si es que te has quedado con más ganas de echarle un vistazo.</p>
-
-<h4>Localización</h4>
-<p>He añadido un enlace directo al estadio del equipo de baloncesto por si es que te da por querer ir a ver unos de sus emocionantes partidos.</p>
-
+<h4>Menú vertical central</h4>
+<p>He incluido mi nombre con copyright para los derechos de autor</p>
 
 <h2 id="estilo">Estilo de la página</h2>
-<h3>Paleta de colores</h3>
+<h3>Paleta de colores (TODAVÍA NO ESTÁN TODOS USADOS)</h3>
 <p> 
-    #008346
+    #FFE66D
+    #FF6B6B
+    #F7FFF7
+    #4ECDC4
+    #1A535C
 </p>
 <p>
     black
@@ -85,26 +55,28 @@ Encima de la imagen he colocado un botón que <br>
 <p>
     white 
 </p>
-<h3>Tipografías</h3>
-<p>
-  Texto normal -> Vintage Browner
-</p>
-<p>
-  Títulos      -> Net Proxima Nova Bold
+<h3>Tipografías (Boostrap)</h3>
+<p> 
+    Helvetica Neue
+    Helvetica
+    Arial
+    sans-serif
+    
 </p>
 
 <h3>Imágenes</h3>
 <p>
-  
+  (Ninguna por ahora)
 </p>
+
 <h3>Videos</h3>
-<p> Vídeo de la presentación de la temporada </p>
-<p> https://www.youtube.com/embed/YcF_SS_KSag </p>
+<p> 
+  (Ninguno por ahora)
+</p>
 
 <h2 id="snippets">Code snippets</h2>
-<p>He utilizado los siguientes:</p>
+<p>He utilizado los siguientes snippets: (sólo boostrap por ahora)</p>
 <ul>
-  <li>Barra de navegación: tomada de w3Schools "How to" https://www.w3schools.com/howto/howto_js_topnav.asp </li>
-  <li>Accordion: tomado de freefronted "40 + CSS Accordions" https://freefrontend.com/css-accordions/ </li>
-  <li>Modal: tomada de w3Schools "How to" https://www.w3schools.com/howto/howto_css_modals.asp </li>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </ul>
