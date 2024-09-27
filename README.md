@@ -37,24 +37,21 @@
 <h2 id="estilo">Estilo de la página</h2>
 <h3>Paleta de colores (TODAVÍA NO ESTÁN TODOS USADOS)</h3>
 <p> 
-    #FFE66D
-    #FF6B6B
-    #F7FFF7
-    #4ECDC4
-    #1A535C
+    <li>#FFE66D</li>
+    <li>#FF6B6B</li>
+    <li>#F7FFF7</li>
+    <li>#4ECDC4</li>
+    <li>#1A535C</li>
+    <li>black</li>
+    <li>white<li> 
 </p>
-<p>
-    black
-</p>
-<p>
-    white 
-</p>
+
 <h3>Tipografías (Boostrap)</h3>
 <p> 
-    Helvetica Neue
-    Helvetica
-    Arial
-    sans-serif
+    <li>Helvetica Neue</li>
+    <li>Helvetica</li>
+    <li>Arial</li>
+    <li>sans-serif</li>
     
 </p>
 
