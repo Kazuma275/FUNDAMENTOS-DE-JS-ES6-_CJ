@@ -28,7 +28,7 @@
   <li>Header</li>  
   <li>Navbar</li>
   <li>Body</li>
-  <li>Ventanas</li>
+  <li>Formulario</li>
   <li>Footer</li>
 </ul>
 
@@ -41,8 +41,8 @@
 <h2>Body</h2>
 <p>En el body he añadido el contenido de los ejercicios.</p>
 
-<h2>Ventanas</h2>
-<p>La novedad de esta tarea que mediante js se hace un login mediante ventanas.</p>
+<h2>Formulario</h2>
+<p>La novedad de esta tarea que mediante js se hace un login mediante un formulario.</p>
 
 <h2>Footer</h2>
 <h4>Menú vertical central</h4>
