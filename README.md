@@ -18,7 +18,9 @@
 
 <p>He añadido un header con mi nombre y el título de los ejercicios.</p>
 <p>Posteriormente he hecho una barra de navegación con herramientas y la colección de ejercicios.</p>
-<p>En el body he añadido el ejercicio correspondiente de la plantilla 3</p>
+<p>En el body he añadido el ejercicio correspondiente de la plantilla 3.</p>
+<p>Luego he añadido un inición de sesión mediante ventanas.</p>
+<p>Para finalizar el footer con mi nombre</p>
 
 <h2 id="estructura">Estructura</h2>
 <p>La web está dividida en 4 secciones:</p>
@@ -26,8 +28,21 @@
   <li>Header</li>  
   <li>Navbar</li>
   <li>Body</li>
+  <li>Ventanas</li>
   <li>Footer</li>
 </ul>
+
+<h2>Header</h2>
+<p>La cabezera que incluye el título del temario Javascript.</p>
+
+<h2>Navbar</h2>
+<p>En el navbar he añadido el enlace a la Plantilla 3 sólo cuando inicias sesión.</p>
+
+<h2>Body</h2>
+<p>En el body he añadido el contenido de los ejercicios.</p>
+
+<h2>Ventanas</h2>
+<p>La novedad de esta tarea que mediante js se hace un login mediante ventanas.</p>
 
 <h2>Footer</h2>
 <h4>Menú vertical central</h4>
