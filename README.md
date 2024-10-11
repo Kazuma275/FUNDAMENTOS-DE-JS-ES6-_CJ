@@ -113,8 +113,11 @@
 </p>
 
 <h3>Imágenes</h3>
-<img src="img/bgblanco.png" alt="fondo blanco" width="200">
-<img src="img/sergio.jfif" alt="mi cara" width="400">
+<h2>Imágenes del proyecto</h2>
+<div style="display: flex; justify-content: center; gap: 10px;">
+  <img src="img/sergio.jfif" alt="sergio" width="200">
+  <img src="img/bgblanco.png" alt="bg blanco" width="200">
+</div>
 
 
 <h3>Videos</h3>
