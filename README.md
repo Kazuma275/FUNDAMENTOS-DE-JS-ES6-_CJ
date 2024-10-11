@@ -127,6 +127,6 @@
 <h2 id="snippets">Code snippets</h2>
 <p>He utilizado los siguientes snippets:</p>
 <ul>
-  <a href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"></a>
-  <a href="https://www.w3schools.com/howto/howto_css_dropdown.asp"></a>
+  <a href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">Enlace</a>
+  <a href="https://www.w3schools.com/howto/howto_css_dropdown.asp">Enlace</a>
 </ul>
