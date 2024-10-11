@@ -14,7 +14,7 @@
 <h2 id="introduccion">Introducción</h2>
 <p>Trabajo realizado por: Sergio Ramos Alarcón</p>
 <p>Proyecto de web de FUNDAMENTOS-DE-JS-ES6</p>
-<p>Septiembre de 2024</p>
+<p>Octubre de 2024</p>
 <p>Licencia CC-BY</p>
 
 <h2 id="resumen">Resumen</h2>
@@ -41,10 +41,10 @@
   <li>`/css`: Archivo de estilos CSS</li>
   <li>`/js`: Archivos JavaScript</li>
   <li>`/img`: Imágenes</li>
+  <li>`/login`: Archivo HTML para hacer el redirect después de iniciar sesión</li>
   <li>`/calculadora`: Archivo HTML para la calculadora</li>
   <li>`/conversor`: Archivo HTML para el conversor</li>
   <li>`/cookies`: Archivo HTML para las cookies</li>
-  <li>`/login`: Archivo HTML para hacer el redirect después de iniciar sesión</li>
 </ul>
 
 <p>Se ha añadido un nuevo en `/login` -> `index.html` que redirecciona a la página principal de la web tras el login.</p>
@@ -86,7 +86,7 @@
 <p>En el body he añadido el contenido de los ejercicios.</p>
 
 <h2>Formulario</h2>
-<p>La novedad de esta tarea es el login, que se realiza mediante un formulario gestionado con JavaScript.</p>
+<p>El login que se realiza mediante un formulario gestionado con JavaScript.</p>
 
 <h2>Footer</h2>
 <h4>Menú vertical central</h4>
@@ -113,8 +113,9 @@
 </p>
 
 <h3>Imágenes</h3>
-<p>He usado el background blanco</p>
-<p>También he incluido una foto de mí</p>
+<img src="img/bgblanco.png" alt="fondo blanco" width="200">
+<img src="img/sergio.jfif" alt="mi cara" width="400">
+
 
 <h3>Videos</h3>
 <p>(Ninguno por ahora)</p>
