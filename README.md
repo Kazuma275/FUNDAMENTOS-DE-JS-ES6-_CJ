@@ -112,22 +112,21 @@
   <li>sans-serif</li>
 </p>
 
-<h3>Imágenes</h3>
 <h2>Imágenes del proyecto</h2>
 <div style="display: flex; justify-content: center; gap: 10px;">
   <img src="img/sergio.jfif" alt="sergio" width="200">
   <img src="img/bgblanco.png" alt="bg blanco" width="200">
   <img src="img/favicon.ico" alt="favicon" width="200">
-  <img src="img/bglightblue.png" alt="favicon" width="200">
+  <img src="img/bglightblue.png" alt="bg azul" width="200">
 </div>
 
 
-<h3>Videos</h3>
+<h2>Videos</h2>
 <p>(Ninguno por ahora)</p>
 
 <h2 id="snippets">Code snippets</h2>
 <p>He utilizado los siguientes snippets:</p>
 <ul>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-  <link href="https://www.w3schools.com/howto/howto_css_dropdown.asp">
+  <a href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"></a>
+  <a href="https://www.w3schools.com/howto/howto_css_dropdown.asp"></a>
 </ul>
