@@ -117,6 +117,8 @@
 <div style="display: flex; justify-content: center; gap: 10px;">
   <img src="img/sergio.jfif" alt="sergio" width="200">
   <img src="img/bgblanco.png" alt="bg blanco" width="200">
+  <img src="img/favicon.ico" alt="favicon" width="200">
+  <img src="img/bglightblue.png" alt="favicon" width="200">
 </div>
 
 
