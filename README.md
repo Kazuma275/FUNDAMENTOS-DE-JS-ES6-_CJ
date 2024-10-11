@@ -1,4 +1,8 @@
 <h1>Memoria de FUNDAMENTOS-DE-JS-ES6-_CJ  - 2º DAW</h1>
+
+<img src="img/portada.webp" alt="sergio" width="1000" height="1000">
+
+
 <h2>Plantilla03 - 01</h2>
 
 <h2>Índice</h2>
@@ -127,6 +131,6 @@
 <h2 id="snippets">Code snippets</h2>
 <p>He utilizado los siguientes snippets:</p>
 <ul>
-  <a href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">Enlace</a>
-  <a href="https://www.w3schools.com/howto/howto_css_dropdown.asp">Enlace</a>
+  <p><a href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">Enlace</a></p>
+  <p><a href="https://www.w3schools.com/howto/howto_css_dropdown.asp">Enlace</a></p>
 </ul>
