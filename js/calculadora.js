@@ -23,14 +23,14 @@ function calcular(operacion) {
             break;
         case 'entero':
             if (ultimoResultado !== null) {
-                resultado = Math.trunc(ultimoResultado); // Convertir el último resultado en entero
+                resultado = Math.trunc(ultimoResultado);
             } else {
                 resultado = 'Error: No hay resultado previo';
             }
             break;
         case 'decimal':
             if (ultimoResultado !== null) {
-                resultado = ultimoResultado - Math.trunc(ultimoResultado); // Extraer la parte decimal del último resultado
+                resultado = ultimoResultado - Math.trunc(ultimoResultado);
             } else {
                 resultado = 'Error: No hay resultado previo';
             }
@@ -43,7 +43,7 @@ function calcular(operacion) {
     }
 
     if (typeof resultado === 'number') {
-        ultimoResultado = resultado; // Almacenar el último resultado si es un número válido
+        ultimoResultado = resultado;
     }
 
     document.getElementById('resultado').textContent = 'Resultado: ' + resultado;

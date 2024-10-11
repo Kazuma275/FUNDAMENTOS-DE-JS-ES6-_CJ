@@ -1,16 +1,16 @@
 'use strict';
 
-// Tiempo de caducidad de la cookie (1 minuto)
-const caducidadCookie = 1 * 60 * 1000; // 1 minuto en milisegundos
+// Tiempo de caducidad de la cookie 
+const caducidadCookie = 1 * 60 * 1000; // (1 minuto)
 
-// Función para crear una cookie
+// Función para crear la cookie
 function setCookie(name, value, time) {
     const expirationDate = new Date();
     expirationDate.setTime(expirationDate.getTime() + time);
     document.cookie = `${encodeURIComponent(name)}=${encodeURIComponent(value)};expires=${expirationDate.toUTCString()};path=/;SameSite=Strict;Secure`;
 }
 
-// Función para obtener una cookie
+// Función para obtener la cookie
 function getCookie(name) {
     const cookieArr = document.cookie.split("; ");
     for (let cookie of cookieArr) {
@@ -22,9 +22,9 @@ function getCookie(name) {
     return null;
 }
 
-// Función para eliminar una cookie
+// Función para eliminar la cookie
 function deleteCookie(name) {
-    setCookie(name, "", -1); // Establece la cookie con fecha de expiración en el pasado
+    setCookie(name, "", -1);
 }
 
 // Verifica si la cookie de sesión existe al cargar la página
@@ -33,9 +33,9 @@ window.onload = function () {
     if (username) {
         // Si existe la cookie, mostrar el contenido principal de inmediato
         mostrarContenidoPrincipal(username);
-        iniciarTemporizadorDeSesion(); // Iniciar monitoreo de sesión
+        iniciarTemporizadorDeSesion();
     } else {
-        mostrarFormularioLogin(); // Mostrar formulario de login si no hay cookie
+        mostrarFormularioLogin();
     }
 };
 
@@ -51,7 +51,7 @@ function mostrarContenidoPrincipal(username) {
 
     // Mostrar el botón de cerrar sesión en la barra de navegación
     const logoutLink = document.getElementById("cerrarSesionBtn");
-    logoutLink.style.display = 'block'; // Mostrar el enlace de cerrar sesión
+    logoutLink.style.display = 'block';
     logoutLink.addEventListener("click", function () {
         deleteCookie('username');
         window.location.reload();
@@ -76,10 +76,9 @@ document.querySelector(".btn").addEventListener("click", function () {
 
         // Añadimos un delay de 2 segundos antes de mostrar el contenido principal
         setTimeout(function() {
-            mostrarContenidoPrincipal(username); // Mostrar el contenido después de 2 segundos
-        }, 2000); // 2 segundos de espera
+            mostrarContenidoPrincipal(username);
+        }, 2000);
 
-        // Ya NO recargamos la página para respetar el delay
         // window.location.reload(); // Eliminado para que el timeout se ejecute correctamente
     } else {
         alert("Por favor, ingrese un nombre de usuario y una contraseña.");
@@ -92,7 +91,7 @@ function iniciarTemporizadorDeSesion() {
         const username = getCookie('username');
         if (!username) {
             alert('Tu sesión ha expirado. Por favor, vuelve a iniciar sesión.');
-            window.location.reload(); // Redirige al formulario de login
+            window.location.reload();
         }
-    }, 5000); // Revisa cada 5 segundos si la cookie aún está presente
+    }, 5000);
 }

@@ -8,13 +8,13 @@ function convertir() {
 
     // Conversión a la base seleccionada
     if (base === "2") {
-        resultado = parseInt(numero).toString(2); // Convertir a binario
+        resultado = parseInt(numero).toString(2);
     } else if (base === "8") {
-        resultado = parseInt(numero).toString(8); // Convertir a octal
+        resultado = parseInt(numero).toString(8);
     } else if (base === "10") {
-        resultado = parseInt(numero).toString(10); // Convertir a decimal
+        resultado = parseInt(numero).toString(10);
     } else if (base === "16") {
-        resultado = parseInt(numero).toString(16); // Convertir a hexadecimal
+        resultado = parseInt(numero).toString(16);
     } else {
         resultado = "Base no válida";
     }

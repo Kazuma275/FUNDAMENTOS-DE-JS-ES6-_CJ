@@ -32,7 +32,7 @@ submitButton.addEventListener("click", function(event) {
         loginMessage.textContent = "El nombre de usuario debe tener al menos 3 caracteres.";
         loginMessage.classList.remove("text-success");
         loginMessage.classList.add("text-danger");
-        return; // Detenemos aquí si el username no es válido
+        return;
     }
 
     // Verificación de las credenciales
@@ -46,10 +46,11 @@ submitButton.addEventListener("click", function(event) {
 
         // Redirigir a la nueva página después de 2 segundos
         setTimeout(function() {
-            window.location.href = "./login/index.html"; // Cambia esto por la URL de tu página
-        }, 2000); // Cambia 2000 a 0 si quieres redirigir inmediatamente
+            window.location.href = "./login/index.html";
+        }, 2000);
 
     } else {
+
         // Si las credenciales son incorrectas
         const retry = confirm("Credenciales incorrectas. ¿Deseas intentarlo de nuevo?");
         
@@ -65,7 +66,7 @@ submitButton.addEventListener("click", function(event) {
             loginMessage.classList.remove("text-success");
             loginMessage.classList.add("text-danger");
 
-            return; // Detenemos la ejecución aquí para que no continúe el proceso de login
+            return;
         }
     }
 });
