@@ -1,6 +1,6 @@
 <h1>Memoria de FUNDAMENTOS-DE-JS-ES6-_CJ  - 2º DAW</h1>
 
-<img src="img/portada.webp" alt="sergio" width="700" height="700">
+<img src="img/portada.webp" alt="sergio" width="1000" height="700">
 
 
 <h2>Plantilla03 - 01</h2>
