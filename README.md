@@ -1,6 +1,6 @@
 <h1>Memoria de FUNDAMENTOS-DE-JS-ES6-_CJ  - 2º DAW</h1>
 
-<img src="img/portada.webp" alt="sergio" width="1000" height="700">
+<img src="img/portada.webp" alt="portada" width="1000" height="700">
 
 
 <h2>Plantilla03 - 01</h2>
@@ -30,6 +30,8 @@
 <p>También he añadido un conversor de sistemas numéricos (octal, hexadecimal, etc.) en JavaScript.</p>
 <p>Finalmente, he creado un nuevo `index.html` para hacer un redireccionamiento inicial y he organizado todo el proyecto en carpetas específicas.</p>
 
+<img src="img/resumen.webp" alt="sergio" width="1000" height="700">
+
 <h2 id="estructura">Estructura</h2>
 <p>La web está dividida en 4 secciones principales:</p>
 <ul>
@@ -53,6 +55,8 @@
 
 <p>Se ha añadido un nuevo en `/login` -> `index.html` que redirecciona a la página principal de la web tras el login.</p>
 
+<img src="img/estructura.avif" alt="estructura" width="1000" height="700">
+
 <h2 id="calculadora">Calculadora</h2>
 <p>He creado una calculadora en JavaScript que permite realizar las siguientes operaciones:</p>
 <ul>
@@ -69,6 +73,8 @@
 </ul>
 <p>La calculadora está disponible en el navbar y se puede acceder a ella después de iniciar sesión. El archivo HTML de la calculadora está en la carpeta `/calculadora`.</p>
 
+<img src="img/calculadora.avif" alt="calculadora" width="1000" height="700">
+
 <h2 id="conversor">Conversor</h2>
 <p>He añadido un conversor de sistemas numéricos que permite convertir entre los siguientes sistemas:</p>
 <ul>
@@ -78,6 +84,8 @@
   <li>Hexadecimal</li>
 </ul>
 <p>El conversor facilita la conversión entre estos diferentes sistemas de numeración y está disponible en el navbar después de iniciar sesión. El archivo HTML del conversor está en la carpeta `/conversor`.</p>
+
+<img src="img/conversor.jpg" alt="conversor" width="1000" height="700">
 
 <h2>Header</h2>
 <p>La cabecera incluye el título del temario de JavaScript.</p>
