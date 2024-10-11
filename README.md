@@ -22,7 +22,8 @@
 <p>Posteriormente, he hecho una barra de navegación con herramientas y la colección de ejercicios.</p>
 <p>En el body he añadido el ejercicio correspondiente de la plantilla 3.</p>
 <p>He incorporado una funcionalidad de inicio de sesión mediante ventanas emergentes.</p>
-<p>Además, se ha añadido una calculadora y un conversor en JavaScript.</p>
+<p>Se ha añadido una calculadora con operaciones básicas y funciones para obtener el número entero o decimal del resultado.</p>
+<p>También he añadido un conversor de sistemas numéricos (octal, hexadecimal, etc.) en JavaScript.</p>
 <p>Finalmente, he creado un nuevo `index.html` para hacer un redireccionamiento inicial y he organizado todo el proyecto en carpetas para mejorar la estructura.</p>
 
 <h2 id="estructura">Estructura</h2>
@@ -46,10 +47,29 @@
 <p>Se ha añadido un nuevo `index.html` que redirecciona a la página principal de la web tras el login.</p>
 
 <h2 id="calculadora">Calculadora</h2>
-<p>He creado una calculadora sencilla en JavaScript que permite realizar operaciones básicas como suma, resta, multiplicación y división. Esta herramienta está disponible en el navbar después de iniciar sesión.</p>
+<p>He creado una calculadora en JavaScript que permite realizar las siguientes operaciones:</p>
+<ul>
+  <li>Suma</li>
+  <li>Resta</li>
+  <li>Multiplicación</li>
+  <li>División</li>
+</ul>
+<p>Además, la calculadora cuenta con las siguientes funcionalidades adicionales:</p>
+<ul>
+  <li>Obtener el número entero del resultado.</li>
+  <li>Obtener el número decimal del resultado (si lo hubiera).</li>
+</ul>
+<p>La calculadora está disponible en el navbar y se puede acceder a ella después de iniciar sesión.</p>
 
 <h2 id="conversor">Conversor</h2>
-<p>También he añadido un conversor de unidades que permite transformar entre diferentes sistemas métricos. El conversor está disponible junto a la calculadora en el navbar, una vez iniciada la sesión.</p>
+<p>He añadido un conversor de sistemas numéricos que permite convertir entre los siguientes sistemas:</p>
+<ul>
+  <li>Binario</li>
+  <li>Octal</li>
+  <li>Decimal</li>
+  <li>Hexadecimal</li>
+</ul>
+<p>El conversor facilita la conversión entre estos diferentes sistemas de numeración y está disponible en el navbar después de iniciar sesión.</p>
 
 <h2>Header</h2>
 <p>La cabecera incluye el título del temario de JavaScript.</p>
