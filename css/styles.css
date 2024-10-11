@@ -1,176 +1,599 @@
 /*
 
 /* 
-    #FFE66D
-    #FF6B6B
-    #F7FFF7
-    #4ECDC4
-    #1A535C
+#FFE66D
+#FF6B6B
+#F7FFF7
+#4ECDC4
+#1A535C
 /*
-
-/******************** IDs ********************/
-
-#sergio{
-    width: 5%;
-    height: 5%;
-    float: right;
-}
 
 /******************** General ********************/
 
 body {
     background: url(../img/bgblanco.png) repeat;
     text-align: justify;
-    font-family: Tahoma, Geneva, sans-serif;
-    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
 }
 
-/******************** Botones *******************/
+/******************** IDs ********************/
 
-.btn {
-    background-color: #eee;
-    border: none;
-    padding: 1rem;
-    font-size: 1rem;
-    width: 10em;
-    border-radius: 1rem;
-    color: #4ECDC4;
-    box-shadow: 0 0.4rem #dfd9d9;
-    cursor: pointer;
-}
-
-.button-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 10vh;
-    margin-top: 20px;
-}
-
-.btn:active {
-    color: white;
-    box-shadow: 0 0.2rem #dfd9d9;
-    transform: translateY(0.2rem);
-}
-
-.btn:hover:not(:disabled) {
-    background: #4ECDC4;
-    color: white;
-    text-shadow: 0 0.1rem #bcb4b4;
-}
-
-.btn:disabled {
-    cursor: auto;
-    color: grey;
-}
-
-.btn:hover {
-    background-color: hsl(0, 0%, 50%);
-    color: #fff;
-    box-shadow: none;
-}
-
-
-/******************** Clases ********************/
-
-.header {
-    background-color: #4ECDC4;
-    text-align: center;
-    padding: 5px;
-    color: white;
-    text-shadow: 2px 2px 4px rgb(0,0,0,0.75);
-    font-weight: bolder;
-}
-
-.topnav {
-    overflow: hidden;
-    background-color: #1A535C;
-    opacity: 0.85;
-}
-
-.topnav a {
-    float: left;
-    display: block;
-    color: #F7FFF7;
-    text-shadow: 2px 2px 4px rgb(0,0,0,0.75);
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-.topnav a:hover {
-    background-color: rgb(128,128,128,0.25);
-    color: #4ECDC4;
-}
-
-.container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 16px;
-}
-
-.card {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: auto;
-    border: 1px solid rgb(211,211,211,0.5);
-    box-shadow: 2px 2px 8px 4px #d3d3d3d1;
-    border-radius: 15px;
-}
-
-.cardTitle {
-    font-size: 24px;
-    padding: 10px 10px 5px 10px;
-    background-color: #1A535C;
-    color: white;
-    text-align: center;
-}
-
-.card-header{
-    font-size: 24px;
-    padding: 10px 10px 5px 10px;
-    background-color: #1A535C !important;
-    color: white !important;
-    text-align: center;
-}
-
-.cardBody {
-    padding: 10px;
-    flex: 1 1 100%;
-}
-
-.cardFooter {
-    background: white;
-    border-radius: 0 0 15px 15px;
-    padding: 10px;
-    text-align: center;
-}
-
-.cardFooter a {
-    text-decoration: none;
-    color: #4ECDC4;
-    text-shadow: 2px 2px 4px rgb(0,0,0,0.25);
-}
-    /* Responsive */
-    @media screen and (max-width: 600px) {
-        .container {
-        width: 100%;
-        }
+    #sergio{
+        width: 5%;
+        height: 5%;
+        float: right;
     }
 
-.footer {
-    background-color: #1A535C;
-    text-align: center;
-    padding: 20px;
-    color: rgb(255,250,250,0.90);
-    text-shadow: 2px 2px 4px rgb(0,0,0,0.75);
-    margin-top: 20px;
-}
+    /******************** Login Form Styles *******************/
 
-/******************** Responsive ********************/
+    #loginCard {
+        margin-top: -5%; /* Añade margen negativo para reducir espacio superior */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh; /* Cambia esto si deseas un espacio específico */
+    }
 
-@media screen and (max-width: 600px) {
-    .container { width: 100%; }
-}
+    .card {
+        background-color: #fff; /* Fondo blanco para el formulario */
+        padding: 20px; /* Espaciado interno */
+        border-radius: 15px; /* Bordes redondeados */
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Sombra suave */
+        width: 100%;
+        max-width: 100%; /* Aumenta el ancho en móviles */
+    }
+
+    .card-title {
+        font-size: 1.5rem; /* Título más grande */
+        color: #1A535C; /* Color del texto del título */
+        text-align: center; /* Centra el texto del título */
+        margin-bottom: 20px; /* Espacio debajo del título */
+    }
+
+    form {
+        display: flex;
+        flex-direction: column; /* Alinea los elementos verticalmente */
+        gap: 15px; /* Espaciado entre los elementos del formulario */
+    }
+
+    input[type="text"],
+    input[type="password"] {
+        width: 90%; /* Ancho más corto para los campos */
+        padding: 10px; /* Espaciado interno */
+        border: 1px solid #ccc; /* Borde gris claro */
+        border-radius: 8px; /* Bordes redondeados */
+        font-size: 1rem; /* Tamaño de fuente */
+        margin: 0 auto; /* Centra los inputs */
+    }
+
+    input[type="button"] {
+        background-color: #4ECDC4; /* Color de fondo */
+        color: white; /* Color del texto */
+        border: none; /* Sin borde */
+        border-radius: 8px; /* Bordes redondeados */
+        padding: 12px; /* Espaciado interno */
+        cursor: pointer; /* Cambia el cursor al pasar por encima */
+        transition: background-color 0.3s; /* Efecto de transición */
+    }
+
+    input[type="button"]:hover {
+        background-color: #1A535C; /* Cambia el color al pasar el mouse */
+    }
+
+    #loginMessage {
+        text-align: center; /* Centra el mensaje de login */
+        color: #ffffff; /* Texto en blanco para un mejor contraste */
+        background-color: #4ECDC4; /* Fondo en azul-verde */
+        font-size: 1.2rem; /* Tamaño de la fuente ligeramente más grande */
+        padding: 10px 15px; /* Añade espacio alrededor del texto */
+        border-radius: 8px; /* Bordes redondeados */
+        margin-top: 20px; /* Espacio superior */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+        display: none; /* Inicialmente oculto */
+    }
+
+    .btn-login {
+        display: block; /* Permite que el span se comporte como un bloque */
+        text-align: center; /* Centra el texto dentro del bloque */
+        color: #4ECDC4; /* Color del texto */
+        font-size: 20px; /* Tamaño de la fuente (más grande) */
+        padding: 15px; /* Padding para dar espacio alrededor del texto */
+        margin-top: 20px; /* Margen superior para separar del input anterior */
+        transition: color 0.3s; /* Transición suave para el color */
+    }
+    
+    .btn-login:hover {
+        color: #1A535C; /* Color del texto al pasar el mouse */
+        text-decoration: none; /* Sin subrayado al pasar el mouse */
+    }
+    
+    
+
+    .form-group {
+        display: flex;
+        flex-direction: column; /* Apila las etiquetas y campos de entrada */
+        gap: 10px; /* Espaciado entre la etiqueta y el input */
+        margin-bottom: 20px; /* Espacio inferior entre grupos de formulario */
+    }
+    
+    .form-label {
+        font-size: 18px; /* Tamaño de la fuente para las etiquetas */
+        color: #1A535C; /* Color de las etiquetas */
+        font-weight: bold; /* Negrita para resaltar las etiquetas */
+        transition: color 0.3s; /* Efecto de transición para el color */
+    }
+    
+    .form-label:hover {
+        color: #4ECDC4; /* Cambia el color al pasar el mouse */
+    }
+    
+    .form-control {
+        width: 90%; /* Ancho más corto para los campos */
+        padding: 10px; /* Espaciado interno */
+        border: 2px solid #1A535C; /* Borde de color más atractivo */
+        border-radius: 8px; /* Esquinas redondeadas */
+        font-size: 16px; /* Tamaño de fuente */
+        transition: border-color 0.3s, box-shadow 0.3s; /* Efectos de transición */
+        margin: 0 auto; /* Centra los inputs */
+    }
+    
+    .form-control:focus {
+        border-color: #4ECDC4; /* Cambia el color del borde al enfocar */
+        outline: none; /* Elimina el borde de enfoque por defecto */
+        box-shadow: 0 0 5px rgba(78, 205, 196, 0.5); /* Agrega un efecto de sombra al enfocar */
+    }
+    
+    .form-control::placeholder {
+        color: #999; /* Color del texto del placeholder */
+        opacity: 1; /* Asegura que el color sea visible */
+    }
+    
+
+    /******************** Main Content **************/
+
+    /* Estilo para el main content */
+    #mainContent {
+        display: flex; /* Usar flexbox para el layout */
+        flex-wrap: nowrap; /* Mantener todas las tarjetas en una línea */
+        overflow-x: auto; /* Permite el desplazamiento horizontal si las tarjetas exceden el ancho */
+        gap: 16px; /* Espacio entre las tarjetas */
+        padding: 10px; /* Añade un poco de espaciado alrededor del contenedor */
+
+    }
+
+    /* Asegúrate de que el dropdown tenga un z-index más alto */
+    .dropdown {
+        z-index: 10; /* Asegurando que el dropdown esté por encima del main content */
+        position: relative; /* Necesario para que z-index funcione */
+    }
+
+
+    /******************** Botones *******************/
+
+    .btn {
+        background-color: #eee;
+        border: none;
+        padding: 1rem;
+        font-size: 1rem;
+        width: 10em;
+        border-radius: 1rem;
+        color: #4ECDC4;
+        box-shadow: 0 0.4rem #dfd9d9;
+        cursor: pointer;
+    }
+
+    .button-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 10vh;
+        margin-top: 20px;
+        flex-wrap: wrap;
+        gap: 10px; /* Espacio entre los botones */
+    }
+
+    .button-container button {
+        width: 50px;
+        height: 50px;
+        font-size: 20px;
+        text-align: center;
+        padding: 0;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        background-color: #f0f0f0;
+        cursor: pointer;/
+    }
+
+    #boton {
+        background-color: #1A535C; /* Color principal del botón */
+        color: white; /* Texto en blanco para contraste */
+        border: none; /* Sin borde */
+        padding: 15px 30px; /* Tamaño adecuado del botón */
+        font-size: 1.2rem; /* Fuente ligeramente más grande */
+        border-radius: 8px; /* Bordes redondeados */
+        cursor: pointer; /* Cambia el cursor al pasar por encima */
+        transition: background-color 0.3s ease, transform 0.3s ease; /* Transiciones suaves */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+        display: flex; /* Usar flexbox para centrar el texto */
+        justify-content: center; /* Centrar horizontalmente */
+        align-items: center; /* Centrar verticalmente */
+        width: 200px;
+    }
+    
+    #boton:hover {
+        background-color: #4ECDC4; /* Cambia el fondo al verde claro */
+        transform: scale(1.05); /* Efecto de agrandamiento al hacer hover */
+    }
+    
+    #boton:active {
+        background-color: #1A535C; /* Fondo más oscuro al hacer clic */
+        transform: scale(0.98); /* Pequeña reducción al hacer clic */
+    }
+    
+    #boton:disabled {
+        background-color: #FFE66D; /* Color diferente para botones deshabilitados */
+        color: #1A535C; /* Texto en un color oscuro */
+        cursor: not-allowed; /* Indica que no se puede hacer clic */
+        opacity: 0.7; /* Reduce un poco la opacidad */
+    }
+    
+
+    .button-container button:hover {
+        background-color: #ddd; /* Efecto hover (al pasar el mouse) */
+    }
+    
+    .button-container button:active {
+        background-color: #bbb; /* Efecto al presionar */
+    }
+
+    .btn:active {
+        color: white;
+        box-shadow: 0 0.2rem #dfd9d9;
+        transform: translateY(0.2rem);
+    }
+
+    .btn:hover:not(:disabled) {
+        background: #4ECDC4;
+        color: white;
+        text-shadow: 0 0.1rem #bcb4b4;
+    }
+
+    .btn:disabled {
+        cursor: auto;
+        color: grey;
+    }
+
+    .btn:hover {
+        background-color: hsl(0, 0%, 50%);
+        color: #fff;
+        box-shadow: none;
+    }
+    
+
+    /******************** Clases ********************/
+
+    .header {
+        background-color: #4ECDC4;
+        text-align: center;
+        padding: 5px;
+        color: white;
+        text-shadow: 2px 2px 4px rgb(0,0,0,0.75);
+        font-weight: bolder;
+    }
+
+    .topnav {
+        position: relative; /* Esto permite que el dropdown se posicione correctamente */
+        overflow: visible; /* Asegura que el dropdown no se corte */
+        background-color: #1A535C; /* Color de fondo del navbar */
+        opacity: 0.85; /* Opacidad del navbar */
+        display: flex; /* Alinea los elementos horizontalmente */
+        justify-content: flex-start; /* Alinea los enlaces a la izquierda */
+        font-weight: bolder;
+    }
+
+    .topnav a {
+        display: block; /* Cambia de float a block para evitar problemas de alineación */
+        color: #F7FFF7; /* Color del texto */
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.75); /* Sombra del texto */
+        padding: 14px 16px; /* Espaciado alrededor de los enlaces */
+        text-decoration: none; /* Elimina el subrayado */
+    }
+
+    .topnav a:hover {
+        background-color: rgba(128,128,128,0.25); /* Efecto hover */
+        color: #4ECDC4; /* Color del texto al pasar el ratón */
+    }
+
+    .container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 16px;
+    }
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: auto;
+        border: 1px solid rgb(211,211,211,0.5);
+        box-shadow: 2px 2px 8px 4px #d3d3d3d1;
+        border-radius: 15px;
+        min-width: 300px; /* Ancho mínimo para las tarjetas */
+        flex: 0 0 auto; /* Permite que las tarjetas mantengan su ancho */
+    }
+
+    .cardTitle {
+        font-size: 2rem; /* Aumenta el tamaño de la fuente */
+        padding: 10px; /* Espaciado alrededor del título */
+        background-color: #1A535C; /* Fondo azul oscuro */
+        color: white; /* Color del texto */
+        text-align: center; /* Centra el texto */
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra del texto para darle profundidad */
+        border-bottom: 4px solid #4ECDC4; /* Subrayado en color atractivo */
+        margin: 0; /* Elimina el margen por defecto */
+        border-radius: 15px 15px 0 0; /* Bordes redondeados en la parte superior */
+        transition: transform 0.3s, color 0.3s; /* Efecto de transición */
+    }
+
+    .cardTitle:hover {
+        transform: translateY(-3px); /* Efecto de elevación al pasar el ratón */
+        color: #4ECDC4; /* Cambia el color del texto al pasar el ratón */
+    }
+
+    .card-header{
+        font-size: 24px;
+        padding: 10px 10px 5px 10px;
+        background-color: #1A535C !important;
+        color: white !important;
+        text-align: center;
+    }
+
+    .cardBody {
+        padding: 20px; /* Espaciado interno */
+        flex: 1 1 100%; /* Permite que el contenido ocupe todo el espacio disponible */
+    }
+
+    .cardFooter {
+        background: white;
+        border-radius: 0 0 15px 15px;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .cardFooter a {
+        text-decoration: none;
+        color: #4ECDC4;
+        text-shadow: 2px 2px 4px rgb(0,0,0,0.25);
+    }
+
+    .footer {
+        background-color: #1A535C;
+        text-align: center;
+        padding: 20px;
+        color: rgb(255,250,250,0.90);
+        text-shadow: 2px 2px 4px rgb(0,0,0,0.75);
+        margin-top: 20px;
+    }
+
+    /******************** Dropdown **********************/
+
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+
+    .dropdown-content {
+        position: absolute; /* Cambia a absolute */
+        display: none; /* Inicialmente oculto */
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1; /* Asegúrate de que esté por encima de otros elementos */   
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    .topnav-dwn {
+        background-color: #1A535C;
+        position: relative;
+        z-index: 1; /* Garantiza que el contenedor del dropdown tenga un menor z-index */
+    }
+
+    /* Estilos adicionales para mejorar la experiencia de usuario */
+    .dropdown-content a {
+        color: black; /* Asegura que el texto dentro de los enlaces sea legible */
+        text-decoration: none;
+        display: block;
+        padding: 8px 16px;
+    }
+
+    .dropdown-content a:hover {
+        background-color: #ddd; /* Agrega un efecto de hover en los links del dropdown */
+    }
+
+    /******************** Calculadora *******************/
+
+    /* Estilos para alinear los inputs y botones */
+    .input-container {
+        display: flex;
+        flex-direction: column; /* Cambiado para apilar los inputs verticalmente */
+        gap: 15px; /* Espaciado entre elementos */
+        margin-bottom: 20px; /* Espacio inferior adicional */
+    }
+
+    .input-container label {
+        font-size: 18px; /* Tamaño de la fuente para los labels */
+        color: #1A535C; /* Color de los labels */
+        font-weight: bold; /* Negrita para resaltar las etiquetas */
+        text-align: left; /* Alinear el texto a la izquierda */
+        transition: color 0.3s; /* Efecto de transición para el color */
+    }
+
+    .input-container label:hover {
+        color: #4ECDC4; /* Cambia el color al pasar el mouse */
+    }
+
+    .input-container input {
+        width: 100%; /* Ancho completo de los inputs */
+        padding: 12px; /* Espaciado interno en los inputs */
+        border: 2px solid #1A535C; /* Borde de color más atractivo */
+        border-radius: 8px; /* Esquinas redondeadas */
+        font-size: 18px; /* Tamaño de la fuente en los inputs */
+        transition: border-color 0.3s, box-shadow 0.3s; /* Efectos de transición */
+    }
+
+    .input-container input:focus {
+        border-color: #4ECDC4; /* Cambia el color del borde al enfocar */
+        outline: none; /* Elimina el borde de enfoque por defecto */
+        box-shadow: 0 0 5px rgba(78, 205, 196, 0.5); /* Agrega un efecto de sombra al enfocar */
+    }
+
+    /* Estilo para los botones de la calculadora */
+    .button-container {
+        display: flex;
+        gap: 10px; /* Espaciado entre botones */
+        justify-content: center; /* Centra los botones */
+    }
+
+    .button-container button {
+        background-color: #4ECDC4; /* Color de fondo de los botones */
+        color: white; /* Color del texto */
+        border-radius: 10px;
+        padding: 10px 15px;
+        font-size: 18px;
+        cursor: pointer;
+        transition: background-color 0.3s, transform 0.2s;
+        box-shadow: 2px 2px 2px black;
+        margin: 2px;
+    }
+
+    .button-container button:hover {
+        background-color: #1A535C; /* Cambia el color al pasar el mouse */
+        transform: translateY(-2px); /* Efecto de elevación */
+    }
+
+    .button-container button:active {
+        transform: translateY(1px); /* Efecto al presionar el botón */
+    }
+
+    /* Estilo para el resultado */
+    #resultado {
+        margin-top: 20px; /* Espacio entre el resultado y los inputs */
+        font-size: 20px; /* Tamaño de la fuente del resultado */
+        color: #1A535C; /* Color del texto del resultado */
+        font-weight: bold; /* Negrita para resaltar el resultado */
+    }
+
+    /******************** Conversor *********************/
+
+    /* Estilos para el conversor */
+    .input-container {
+        display: flex;
+        align-items: center;
+        gap: 10px; /* Espaciado entre elementos */
+    }
+    .input-container label {
+        margin: 0; /* Sin margen para los labels */
+    }
+    .input-container input {
+        width: 100px; /* Ajustar el ancho de los inputs */
+    }
+    .button-container {
+        display: flex;
+        gap: 5px; /* Espaciado entre botones */
+    }
+
+    /** Resultado **/
+
+    .resultado {
+        margin-top: 20px; /* Espacio entre el resultado y los inputs */
+        border: 1px solid #ccc; /* Bordes del cuadro de resultado */
+        padding: 10px; /* Espaciado interno */
+        border-radius: 5px; /* Bordes redondeados */
+        background-color: #f9f9f9; /* Color de fondo del resultado */
+    }
+
+    #resultadoConversion {
+        margin-top: 20px; /* Espacio entre el resultado y los inputs */
+        font-size: 20px; /* Tamaño de la fuente del resultado */
+        color: #1A535C; /* Color del texto del resultado */
+        font-weight: bold; /* Negrita para resaltar el resultado */
+        border: 2px solid #4ECDC4; /* Borde del cuadro de resultado */
+        border-radius: 8px; /* Bordes redondeados */
+        padding: 15px; /* Espaciado interno */
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra suave para darle profundidad */
+        text-align: center; /* Centra el texto */
+        transition: background-color 0.3s, transform 0.3s; /* Efecto de transición */
+    }
+    
+    #resultadoConversion:hover {
+        background-color: #4ECDC4; /* Cambia el color de fondo al pasar el mouse */
+        color: white; /* Cambia el color del texto al pasar el mouse */
+        transform: scale(1.02); /* Ligeramente aumenta el tamaño */
+    }
+
+    /** Select **/
+
+    #base {
+        width: 100%; /* Asegura que el select ocupe el ancho completo */
+        padding: 10px; /* Espaciado interno */
+        font-size: 16px; /* Tamaño de la fuente */
+        color: #333; /* Color del texto */
+        background-color: #F9F9F9; /* Color de fondo igual que #resultadoConversion */
+        border: 2px solid #000; /* Borde negro inicial */
+        border-radius: 8px; /* Bordes redondeados */
+        appearance: none; /* Elimina el estilo predeterminado del navegador */
+        background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAKElEQVR42mJ8xgDEwAAG9N1F4qz4AAAAABJRU5ErkJggg=='); /* Icono de flecha hacia abajo */
+        background-repeat: no-repeat; /* No repetir la imagen */
+        background-position: right 10px center; /* Posicionar la imagen */
+        background-size: 12px; /* Tamaño del icono */
+        cursor: pointer; /* Cambiar el cursor a puntero */
+        transition: border-color 0.3s, background-color 0.3s; /* Transición suave para el borde y el fondo */
+        margin-top: 20px; /* Espacio en la parte superior */
+    }
+    
+    #base:focus {
+        border-color: #4ECDC4; /* Cambia el color del borde al enfocarse a azul (mismo que #resultado) */
+        background-color: #E0F7F1; /* Cambia el fondo al enfocarse */
+        outline: none; /* Elimina el contorno por defecto */
+    }
+    
+    #base:hover {
+        border-color: #4ECDC4; /* Cambia el color del borde al pasar el mouse a azul (mismo que #resultado) */
+    }
+    
+
+    /******************** Responsive Styles ********************/
+    @media screen and (max-width: 600px) {
+        .container {
+            width: 100%; 
+        }
+
+        .header h1 {
+            font-size: 1.5rem; /* Reduce el tamaño de la fuente */
+        }
+
+        .header h3 {
+            font-size: 1.2rem; /* Reduce el tamaño de la fuente */
+        }
+
+        .header h4, .header h5 {
+            font-size: 1rem; /* Reduce el tamaño de la fuente */
+        }
+
+        .card {
+            max-width: 90%; /* Aumenta el ancho en móviles */
+        }
+
+        input[type="button"] {
+            width: 100%; /* Botón ocupa el 100% en móviles */
+        }
+
+        .topnav a {
+            padding: 10px; /* Reduce el padding en móviles */
+            font-size: 0.9rem; /* Reduce el tamaño de la fuente */
+        }
+    }
