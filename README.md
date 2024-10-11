@@ -43,11 +43,11 @@
   <li>`/img`: Imágenes</li>
   <li>`/calculadora`: Archivo HTML para la calculadora</li>
   <li>`/conversor`: Archivo HTML para el conversor</li>
-  <li>`/pages`: Otras plantillas HTML</li>
-  <li>`/assets`: Recursos multimedia adicionales</li>
+  <li>`/cookies`: Archivo HTML para las cookies</li>
+  <li>`/login`: Archivo HTML para hacer el redirect después de iniciar sesión</li>
 </ul>
 
-<p>Se ha añadido un nuevo `index.html` que redirecciona a la página principal de la web tras el login.</p>
+<p>Se ha añadido un nuevo en `/login` -> `index.html` que redirecciona a la página principal de la web tras el login.</p>
 
 <h2 id="calculadora">Calculadora</h2>
 <p>He creado una calculadora en JavaScript que permite realizar las siguientes operaciones:</p>
@@ -77,9 +77,10 @@
 
 <h2>Header</h2>
 <p>La cabecera incluye el título del temario de JavaScript.</p>
+<p>También tiene todos los enlaces de js,favicon,css que necesito</p>
 
 <h2>Navbar</h2>
-<p>En el navbar he añadido los enlaces a la Plantilla 3, la Calculadora y el Conversor, los cuales solo son visibles después de iniciar sesión.</p>
+<p>En el navbar he añadido los enlaces a la Plantilla 3, la Calculadora y el Conversor que están en el desplegable de "Cookies", los cuales solo son visibles después de iniciar sesión.</p>
 
 <h2>Body</h2>
 <p>En el body he añadido el contenido de los ejercicios.</p>
@@ -103,23 +104,24 @@
   <li>white</li> 
 </p>
 
-<h3>Tipografías (Bootstrap)</h3>
+<h3>Tipografías</h3>
 <p>
-  <li>Helvetica Neue</li>
+  <li>Roboto (Google)</li>
   <li>Helvetica</li>
   <li>Arial</li>
   <li>sans-serif</li>
 </p>
 
 <h3>Imágenes</h3>
-<p>(Ninguna por ahora)</p>
+<p>He usado el background blanco</p>
+<p>También he incluido una foto de mí</p>
 
 <h3>Videos</h3>
 <p>(Ninguno por ahora)</p>
 
 <h2 id="snippets">Code snippets</h2>
-<p>He utilizado los siguientes snippets: (sólo Bootstrap por ahora)</p>
+<p>He utilizado los siguientes snippets:</p>
 <ul>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://www.w3schools.com/howto/howto_css_dropdown.asp">
 </ul>
