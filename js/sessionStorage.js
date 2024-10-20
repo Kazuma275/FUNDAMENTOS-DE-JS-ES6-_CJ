@@ -1,37 +1,25 @@
 'use strict';
 
-// Tiempo de caducidad de la cookie 
-const caducidadCookie = 1 * 60 * 1000; // (1 minuto)
-
-// Función para crear la cookie
-function setCookie(name, value, time) {
-    const expirationDate = new Date();
-    expirationDate.setTime(expirationDate.getTime() + time);
-    document.cookie = `${encodeURIComponent(name)}=${encodeURIComponent(value)};expires=${expirationDate.toUTCString()};path=/;SameSite=Strict;Secure`;
+// Función para establecer un valor en sessionStorage
+function setSession(key, value) {
+    sessionStorage.setItem(key, value);
 }
 
-// Función para obtener la cookie
-function getCookie(name) {
-    const cookieArr = document.cookie.split("; ");
-    for (let cookie of cookieArr) {
-        const [key, value] = cookie.split("=");
-        if (decodeURIComponent(key) === name) {
-            return decodeURIComponent(value);
-        }
-    }
-    return null;
+// Función para obtener un valor de sessionStorage
+function getSession(key) {
+    return sessionStorage.getItem(key);
 }
 
-// Función para eliminar la cookie
-function deleteCookie(name) {
-    setCookie(name, "", -1);
+// Función para eliminar un valor de sessionStorage
+function deleteSession(key) {
+    sessionStorage.removeItem(key);
 }
 
-// Verifica si la cookie de sesión existe al cargar la página
+// Verifica si la sesión existe al cargar la página
 window.onload = function () {
-    const username = getCookie('username');
+    const username = getSession('username');
     if (username) {
-        // Si existe la cookie, mostrar el contenido principal de inmediato
+        // Si existe el valor en sessionStorage, mostrar el contenido principal de inmediato
         mostrarContenidoPrincipal(username);
         iniciarTemporizadorDeSesion();
     } else {
@@ -48,12 +36,13 @@ function mostrarContenidoPrincipal(username) {
     // Mostrar el enlace a las cookies y el enlace P3
     document.getElementById("cookies").style.display = 'block';
     document.getElementById("P3").style.display = 'block';
+    document.getElementById("string").style.display = 'block';
 
     // Mostrar el botón de cerrar sesión en la barra de navegación
     const logoutLink = document.getElementById("cerrarSesionBtn");
     logoutLink.style.display = 'block';
     logoutLink.addEventListener("click", function () {
-        deleteCookie('username');
+        deleteSession('username');
         window.location.reload();
     });
 }
@@ -72,7 +61,7 @@ document.querySelector(".btn").addEventListener("click", function () {
 
     if (username && password) {
         // Validar usuario y contraseña antes de proceder
-        setCookie('username', username, caducidadCookie);
+        setSession('username', username);
 
         // Añadimos un delay de 2 segundos antes de mostrar el contenido principal
         setTimeout(function() {
@@ -85,10 +74,10 @@ document.querySelector(".btn").addEventListener("click", function () {
     }
 });
 
-// Monitorea si la sesión (cookie) sigue activa
+// Monitorea si la sesión (sessionStorage) sigue activa
 function iniciarTemporizadorDeSesion() {
     setInterval(function () {
-        const username = getCookie('username');
+        const username = getSession('username');
         if (!username) {
             alert('Tu sesión ha expirado. Por favor, vuelve a iniciar sesión.');
             window.location.reload();

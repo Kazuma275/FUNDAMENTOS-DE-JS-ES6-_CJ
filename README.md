@@ -2,7 +2,6 @@
 
 <img src="img/portada.webp" alt="portada" width="1000" height="700">
 
-
 <h2>Plantilla03 - 01</h2>
 
 <h2>Índice</h2>
@@ -13,6 +12,7 @@
   <li><a href="#calculadora">Calculadora</a></li>
   <li><a href="#conversor">Conversor</a></li>
   <li><a href="#estilo">Estilo</a></li>
+  <li><a href="#string">String</a></li>
 </ul>
 
 <h2 id="introduccion">Introducción</h2>
@@ -29,6 +29,8 @@
 <p>Se ha añadido una calculadora con operaciones básicas, funciones para obtener el número entero o decimal del resultado y el cálculo de factorial.</p>
 <p>También he añadido un conversor de sistemas numéricos (octal, hexadecimal, etc.) en JavaScript.</p>
 <p>Finalmente, he creado un nuevo `index.html` para hacer un redireccionamiento inicial y he organizado todo el proyecto en carpetas específicas.</p>
+<p>Además, he sustituido el sistema de cookies por uno basado en <code>sessionStorage</code> para gestionar las sesiones de usuario.</p>
+<p>También se ha añadido un apartado en el navbar llamado "String", donde se puede modificar un texto según las opciones solicitadas.</p>
 
 <img src="img/resumen.webp" alt="sergio" width="1000" height="700">
 
@@ -87,18 +89,21 @@
 
 <img src="img/conversor.jpg" alt="conversor" width="1000" height="700">
 
+<h2 id="string">String</h2>
+<p>He añadido un apartado en el navbar llamado "String" que permite modificar un texto ingresado por el usuario. Estas modificaciones incluyen opciones como convertir a mayúsculas, minúsculas, eliminar espacios, entre otras funcionalidades, usando JavaScript.</p>
+
 <h2>Header</h2>
 <p>La cabecera incluye el título del temario de JavaScript.</p>
-<p>También tiene todos los enlaces de js,favicon,css que necesito</p>
+<p>También tiene todos los enlaces de js, favicon, css que necesito</p>
 
 <h2>Navbar</h2>
-<p>En el navbar he añadido los enlaces a la Plantilla 3, la Calculadora y el Conversor que están en el desplegable de "Cookies", los cuales solo son visibles después de iniciar sesión.</p>
+<p>En el navbar he añadido los enlaces a la Plantilla 3, la Calculadora, el Conversor y el apartado "String", los cuales solo son visibles después de iniciar sesión.</p>
 
 <h2>Body</h2>
 <p>En el body he añadido el contenido de los ejercicios.</p>
 
 <h2>Formulario</h2>
-<p>El login que se realiza mediante un formulario gestionado con JavaScript.</p>
+<p>El login se realiza mediante un formulario gestionado con JavaScript y utiliza <code>sessionStorage</code> en lugar de cookies para la gestión de la sesión de usuario.</p>
 
 <h2>Footer</h2>
 <h4>Menú vertical central</h4>
@@ -131,7 +136,6 @@
   <img src="img/favicon.ico" alt="favicon" width="200">
   <img src="img/bglightblue.png" alt="bg azul" width="200">
 </div>
-
 
 <h2>Videos</h2>
 <p>(Ninguno por ahora)</p>

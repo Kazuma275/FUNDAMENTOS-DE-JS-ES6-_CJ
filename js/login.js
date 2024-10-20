@@ -12,14 +12,6 @@ const usernameInput = document.getElementById("username");
 const passwordInput = document.getElementById("password");
 const submitButton = loginForm.querySelector("input[type=button]");
 
-// Selecciona los elementos del navbar que quieres ocultar
-const p3Link = document.getElementById("P3");
-const cookiesLink = document.getElementById("cookies");
-
-// Oculta los elementos "P3" y "Cookies" al cargar la página
-p3Link.style.display = "none";
-cookiesLink.style.display = "none";
-
 // Valida que el nombre de usuario tenga al menos 3 caracteres
 const usernamePattern = /^.{3,}$/;
 

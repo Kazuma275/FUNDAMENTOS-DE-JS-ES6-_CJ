@@ -8,7 +8,7 @@
 #1A535C
 /*
 
-/******************** General ********************/
+    /******************** General ********************/
 
 body {
     background: url(../img/bgblanco.png) repeat;
@@ -16,7 +16,7 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-/******************** IDs ********************/
+    /******************** IDs ********************/
 
     #sergio{
         width: 5%;
@@ -167,6 +167,102 @@ body {
         position: relative; /* Necesario para que z-index funcione */
     }
 
+    /******************** Strings ********************/
+
+    .button-group {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: auto; /* Ajuste automático según contenido */
+        margin-top: 20px;
+        flex-wrap: wrap;
+        gap: 10px; /* Espacio entre los botones */
+    }
+    
+    .button-group button {
+        background-color: #eee; /* Color de fondo de los botones */
+        border: none; /* Sin borde */
+        padding: 1rem; /* Espaciado interno */
+        font-size: 1rem; /* Tamaño de fuente */
+        border-radius: 1rem; /* Bordes redondeados */
+        color: #4ECDC4; /* Color del texto */
+        box-shadow: 0 0.4rem #dfd9d9; /* Sombra de los botones */
+        cursor: pointer; /* Cambiar cursor al pasar por encima */
+        transition: background-color 0.3s ease, transform 0.3s ease; /* Transiciones suaves */
+    }
+    
+    .button-group button:hover {
+        background-color: #4ECDC4; /* Cambia el fondo al verde claro */
+        color: white; /* Texto en blanco para contraste */
+        transform: scale(1.05); /* Efecto de agrandamiento al hacer hover */
+    }
+    
+    .button-group button:active {
+        background-color: #1A535C; /* Fondo más oscuro al hacer clic */
+        transform: scale(0.98); /* Pequeña reducción al hacer clic */
+    }
+
+    /* Estilos para el título del modificador de texto */
+    .texto-card {
+        font-size: 2.5rem; /* Tamaño de fuente para el título */
+        margin: 10px 0; /* Margen superior e inferior */
+        color: #1A535C; /* Color del texto */
+        font-weight: bold; /* Negrita */
+        text-align: center; /* Centrar el texto */
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.75); /* Sombra del texto */
+        transition: color 0.3s; /* Transición suave para el color */
+    }
+
+    /* Efecto hover para el título */
+    .texto-card:hover {
+        color: #4ECDC4; /* Cambia a un color más claro al pasar el ratón */
+    }
+
+        /* Estilos para el textarea */
+    #inputText {
+        width: 100%; /* Ajusta el ancho al 100% del contenedor */
+        padding: 10px; /* Espaciado interno */
+        font-size: 1.2rem; /* Tamaño de fuente */
+        color: #1A535C; /* Color del texto */
+        background-color: #f0f0f0; /* Color de fondo */
+        border: 1px solid #ccc; /* Borde gris claro */
+        border-radius: 8px; /* Bordes redondeados */
+        transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Transición suave para efectos */
+        resize: none;
+    }
+
+    /* Efecto al enfocar el textarea */
+    #inputText:focus {
+        border-color: #4ECDC4; /* Cambia el color del borde al enfocar */
+        box-shadow: 0 0 5px rgba(78, 205, 196, 0.5); /* Sombra al enfocar */
+        outline: none; /* Elimina el borde de enfoque predeterminado */
+    }
+
+    /* Estilo para el placeholder */
+    #inputText::placeholder {
+        color: #1A535C; /* Color del texto del placeholder */
+        opacity: 0.7; /* Opacidad para diferenciar del texto normal */
+        font-style: italic; /* Estilo en cursiva para el placeholder */
+    }
+
+    /******************** API ***********************/
+
+    .content {
+        display: flex; /* Usamos flexbox para la alineación */
+        justify-content: flex-start; /* Alinea el contenido al inicio */
+        align-items: flex-start; /* Alinea el texto y la imagen al inicio */
+        margin-top: 20px; /* Espacio superior */
+    }
+    
+    #textContainer {
+        flex: 1; /* El texto ocupa el espacio disponible */
+        margin-right: 20px; /* Espacio a la derecha del texto */
+    }
+    
+    #characterImage {
+        width: 200px; /* Ancho de la imagen */
+        height: auto; /* Mantiene la proporción de la imagen */
+    }    
 
     /******************** Botones *******************/
 
