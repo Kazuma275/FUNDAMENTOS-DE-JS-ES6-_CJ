@@ -9,9 +9,9 @@
   <li><a href="#introduccion">Introducción</a></li>
   <li><a href="#resumen">Resumen</a></li>
   <li><a href="#estructura">Estructura</a></li>
+  <li><a href="#estilo">Estilo</a></li>
   <li><a href="#calculadora">Calculadora</a></li>
   <li><a href="#conversor">Conversor</a></li>
-  <li><a href="#estilo">Estilo</a></li>
   <li><a href="#string">String</a></li>
 </ul>
 
@@ -52,7 +52,7 @@
   <li>`/login`: Archivo HTML para hacer el redirect después de iniciar sesión</li>
   <li>`/calculadora`: Archivo HTML para la calculadora</li>
   <li>`/conversor`: Archivo HTML para el conversor</li>
-  <li>`/cookies`: Archivo HTML para las cookies</li>
+  <li>`/string`: Archivo HTML para la funcionalidad "String"</li>
 </ul>
 
 <p>Se ha añadido un nuevo en `/login` -> `index.html` que redirecciona a la página principal de la web tras el login.</p>
@@ -91,6 +91,7 @@
 
 <h2 id="string">String</h2>
 <p>He añadido un apartado en el navbar llamado "String" que permite modificar un texto ingresado por el usuario. Estas modificaciones incluyen opciones como convertir a mayúsculas, minúsculas, eliminar espacios, entre otras funcionalidades, usando JavaScript.</p>
+<p>El archivo HTML para esta funcionalidad está en la carpeta `/string`.</p>
 
 <h2>Header</h2>
 <p>La cabecera incluye el título del temario de JavaScript.</p>
