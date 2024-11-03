@@ -17,8 +17,7 @@
 
     <script defer src="../js/function.js" type="text/javascript"></script>
     <script defer src="../js/script.js" type="text/javascript"></script>
-    <script defer src="../js/cookie.js" type="text/javascript"></script>
-    <script defer src="../js/string.js" type="text/javascript"></script>
+    <script defer src="../js/matriz.js" type="text/javascript"></script>
 
 </head>
 
@@ -38,8 +37,8 @@
     <a href="https://es.javascript.info/js">javascript.info</a>
     <a href="https://developer.mozilla.org/es/docs/Web/JavaScript">MDN</a>
     <a id="P3" href="https://kazuma275.github.io/FUNDAMENTOS-DE-JS-ES6-_CJ/">P3</a>
-    
-    <!-- Dropdown -->    
+
+    <!-- Dropdown -->
     <div class="dropdown topnav-dwn">
         <a id="cookies" href="#" class="dropbtn">Number</a>
         <div class="dropdown-content">
@@ -50,9 +49,9 @@
 
     <!-- Dropdown -->
     <div class="dropdown topnav-dwn">
-        <a id="cookies" href="#" class="dropbtn">String</a>
+        <a id="string" href="#" class="dropbtn">String</a>
         <div class="dropdown-content">
-            <a href="../string/index.html">Cadena</a>
+            <a href="../string/index.html">String</a>
             <a href="../api/index.html">Api</a>
         </div>
     </div>
@@ -74,39 +73,30 @@
     <!-- ------MAIN-CONTENT------ -->
     <div class="container">
         <div class="card">
-            <div class="cardTitle">String</div>
-        
-            <div class="cardBody">
-                <h1 class="texto-card">Modificador de texto</h1>
-                <textarea id="inputText" rows="4" cols="50" placeholder="Escribe un texto" ></textarea>
+            <h1>Operaciones Básicas con Matrices</h1>
+            <form id="matrixForm">
+                <label for="size">Tamaño de la matriz (N x N):</label>
+                <input type="number" id="inputMatriz" value="2" min="1" size="20" required>
                 <br>
                 <div class="button-group">
-                    <button id="btnMayus">A-Z</button>
-                    <button id="btnMinus">a-z</button>
-                    <button id="btnPrimeraMayus">A_</button>
-                    <button id="btnUltimaMayus">_Z</button>
-                    <button id="btnPrimeraMinus">a_</button>
-                    <button id="btnUltimaMinus">_z</button>
-                    <button id="btnVocalesMayus">AEIOU</button>
-                    <button id="btnVocalesMinus">aeiou</button>
-                    <button id="btnConsonantesMayus">BCD</button>
-                    <button id="btnConsonantesMinus">bcd</button>
+
+                    <button type="button" onclick="generateMatrices()">Generar Matrices</button>
+                    <button type="button" onclick="calculateSum()">Sumar Matrices</button>
+                    <button type="button" onclick="calculateDifference()">Restar Matrices</button>
+                    <button type="button" onclick="calculateProduct()">Multiplicar Matrices</button>
                 </div>
-                <div class="button-group">
-                    <button id="btnAleatorio">Aleatorio</button>
-                    <button id="btnParar">Parar</button>
-                    <button id="btnRapido">Rápido</button>
-                    <button id="btnLento">Lento</button>
-                </div>
-            </div>
-        
-            <div class="cardFooter"><a href="../index.html">&gt;&gt; Página Principal</a></div>
+            </form>
+            
+            <h2 class="texto-card" style="margin-top: 12%;">Resultados</h2>
+
+            <div id="result"></div>
         </div>
-        
 
     </div>
 
     <br/>
+
+    <div class="cardFooter"><a href="../index.html">&gt;&gt; Página Principal</a></div>
     
     <!-- ---------FOOTER----------- -->
     <div class="footer">

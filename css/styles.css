@@ -205,7 +205,7 @@ body {
     /* Estilos para el título del modificador de texto */
     .texto-card {
         font-size: 2.5rem; /* Tamaño de fuente para el título */
-        margin: 10px 0; /* Margen superior e inferior */
+        margin: 20px 20px; /* Margen superior e inferior */
         color: #1A535C; /* Color del texto */
         font-weight: bold; /* Negrita */
         text-align: center; /* Centrar el texto */
@@ -218,9 +218,22 @@ body {
         color: #4ECDC4; /* Cambia a un color más claro al pasar el ratón */
     }
 
-        /* Estilos para el textarea */
+    /* Estilos para el textarea */
     #inputText {
         width: 100%; /* Ajusta el ancho al 100% del contenedor */
+        padding: 10px; /* Espaciado interno */
+        font-size: 1.2rem; /* Tamaño de fuente */
+        color: #1A535C; /* Color del texto */
+        background-color: #f0f0f0; /* Color de fondo */
+        border: 1px solid #ccc; /* Borde gris claro */
+        border-radius: 8px; /* Bordes redondeados */
+        transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Transición suave para efectos */
+        resize: none;
+    }
+
+    #inputMatriz {
+        width: 90%;
+        height: 100%;
         padding: 10px; /* Espaciado interno */
         font-size: 1.2rem; /* Tamaño de fuente */
         color: #1A535C; /* Color del texto */
@@ -298,6 +311,39 @@ body {
         border: 1px solid #ccc;
         background-color: #f0f0f0;
         cursor: pointer;/
+    }
+
+    .btn-load {
+        background-color: #1A535C;
+        color: white;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s ease, transform 0.3s ease; /* Transiciones suaves */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+        display: flex; /* Usar flexbox para centrar el texto */
+        justify-content: center; /* Centrar horizontalmente */
+        align-items: center; /* Centrar verticalmente */
+        padding: 7px 15px;
+        font-size: 1.2rem;
+        border-radius: 8px;
+        display: inline-block;
+    }
+
+    .btn-load:hover {
+        background-color: #4ECDC4; /* Cambia el fondo al verde claro */
+        transform: scale(1.05); /* Efecto de agrandamiento al hacer hover */
+    }
+    
+    .btn-load:active {
+        background-color: #1A535C; /* Fondo más oscuro al hacer clic */
+        transform: scale(0.98); /* Pequeña reducción al hacer clic */
+    }
+    
+    .btn-load:disabled {
+        background-color: #FFE66D; /* Color diferente para botones deshabilitados */
+        color: #1A535C; /* Texto en un color oscuro */
+        cursor: not-allowed; /* Indica que no se puede hacer clic */
+        opacity: 0.7; /* Reduce un poco la opacidad */
     }
 
     #boton {
@@ -455,6 +501,7 @@ body {
         border-radius: 0 0 15px 15px;
         padding: 10px;
         text-align: center;
+        margin-top: 2%;
     }
 
     .cardFooter a {

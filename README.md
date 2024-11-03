@@ -13,6 +13,8 @@
   <li><a href="#calculadora">Calculadora</a></li>
   <li><a href="#conversor">Conversor</a></li>
   <li><a href="#string">String</a></li>
+  <li><a href="#string-api">String - API</a></li>
+  <li><a href="#matriz">Matriz</a></li>
 </ul>
 
 <h2 id="introduccion">Introducción</h2>
@@ -92,6 +94,14 @@
 <h2 id="string">String</h2>
 <p>He añadido un apartado en el navbar llamado "String" que permite modificar un texto ingresado por el usuario. Estas modificaciones incluyen opciones como convertir a mayúsculas, minúsculas, eliminar espacios, entre otras funcionalidades, usando JavaScript.</p>
 <p>El archivo HTML para esta funcionalidad está en la carpeta `/string`.</p>
+
+<h2 id="string-api">String - API</h2>
+<p>En este apartado, he implementado una conexión a la API de Star Wars, que permite acceder a información de personajes de esta saga. A través de JavaScript, se realiza una solicitud a la API, y la información de los personajes (nombre, género, especie, etc.) se muestra dinámicamente en la web. Esto permite explorar detalles de cada personaje de Star Wars en la interfaz de la aplicación.</p>
+<p>El archivo HTML para esta funcionalidad se encuentra en la carpeta `/string/api`.</p>
+
+<h2 id="matriz">Matriz</h2>
+<p>He añadido una funcionalidad de operaciones con matrices, disponible en la sección "Matriz". Esta herramienta permite realizar operaciones matemáticas con matrices de dimensiones especificadas por el usuario, tales como suma, resta y multiplicación de matrices. La implementación permite seleccionar el tamaño de las matrices y realizar los cálculos según los valores ingresados.</p>
+<p>El archivo HTML para esta funcionalidad está en la carpeta `/matriz`.</p>
 
 <h2>Header</h2>
 <p>La cabecera incluye el título del temario de JavaScript.</p>

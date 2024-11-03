@@ -33,10 +33,11 @@ function mostrarContenidoPrincipal(username) {
     document.getElementById("mainContent").style.display = 'block';
     document.getElementById("loginMessage").innerText = `¡Bienvenido, ${username}!`;
 
-    // Mostrar el enlace a las cookies y el enlace P3
+    // Mostrar los enlaces
     document.getElementById("cookies").style.display = 'block';
     document.getElementById("P3").style.display = 'block';
     document.getElementById("string").style.display = 'block';
+    document.getElementById("indexedb").style.display = 'block';
 
     // Mostrar el botón de cerrar sesión en la barra de navegación
     const logoutLink = document.getElementById("cerrarSesionBtn");
