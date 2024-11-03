@@ -55,6 +55,8 @@
   <li>`/calculadora`: Archivo HTML para la calculadora</li>
   <li>`/conversor`: Archivo HTML para el conversor</li>
   <li>`/string`: Archivo HTML para la funcionalidad "String"</li>
+  <li>`/api`: Archivo HTML para la funcionalidad "String - API"</li>
+  <li>`/matriz`: Archivo HTML para la funcionalidad "Matriz"</li>
 </ul>
 
 <p>Se ha añadido un nuevo en `/login` -> `index.html` que redirecciona a la página principal de la web tras el login.</p>
@@ -97,7 +99,7 @@
 
 <h2 id="string-api">String - API</h2>
 <p>En este apartado, he implementado una conexión a la API de Star Wars, que permite acceder a información de personajes de esta saga. A través de JavaScript, se realiza una solicitud a la API, y la información de los personajes (nombre, género, especie, etc.) se muestra dinámicamente en la web. Esto permite explorar detalles de cada personaje de Star Wars en la interfaz de la aplicación.</p>
-<p>El archivo HTML para esta funcionalidad se encuentra en la carpeta `/string/api`.</p>
+<p>El archivo HTML para esta funcionalidad se encuentra en la carpeta `/api`.</p>
 
 <h2 id="matriz">Matriz</h2>
 <p>He añadido una funcionalidad de operaciones con matrices, disponible en la sección "Matriz". Esta herramienta permite realizar operaciones matemáticas con matrices de dimensiones especificadas por el usuario, tales como suma, resta y multiplicación de matrices. La implementación permite seleccionar el tamaño de las matrices y realizar los cálculos según los valores ingresados.</p>
