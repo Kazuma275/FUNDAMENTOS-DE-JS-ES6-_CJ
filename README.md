@@ -20,7 +20,7 @@
 <h2 id="introduccion">Introducción</h2>
 <p>Trabajo realizado por: Sergio Ramos Alarcón</p>
 <p>Proyecto de web de FUNDAMENTOS-DE-JS-ES6</p>
-<p>Octubre de 2024</p>
+<p>Noviembre de 2024</p>
 <p>Licencia CC-BY</p>
 
 <h2 id="resumen">Resumen</h2>
