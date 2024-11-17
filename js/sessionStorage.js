@@ -66,7 +66,7 @@ document.querySelector(".btn").addEventListener("click", function () {
 
         // Añadimos un delay de 2 segundos antes de mostrar el contenido principal
         setTimeout(function() {
-            window.location.href = "../login/index.html";
+            window.location.href = "login/index.html";
         }, 2000);
 
         // window.location.reload(); // Eliminado para que el timeout se ejecute correctamente
