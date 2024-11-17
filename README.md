@@ -15,6 +15,7 @@
   <li><a href="#string">String</a></li>
   <li><a href="#string-api">String - API</a></li>
   <li><a href="#matriz">Matriz</a></li>
+  <li><a href="#crud">Crud</a></li>
 </ul>
 
 <h2 id="introduccion">Introducción</h2>
@@ -111,12 +112,33 @@
 
 <img src="img/matriz.webp" alt="estructura" width="1000" height="700">
 
+<h2 id="crud">Crud</h2>
+<p>Este apartado incluye funcionalidades relacionadas con el manejo de almacenamiento en el navegador, permitiendo gestionar datos mediante diferentes tecnologías de almacenamiento. A continuación se detallan las subramas:</p>
+<ul>
+  <li><a href="#cookies">Cookies</a></li>
+  <li><a href="#sessionstorage">SessionStorage</a></li>
+  <li><a href="#loginstorage">LoginStorage</a></li>
+  <li><a href="#indexeddb">IndexedDB</a></li>
+</ul>
+
+<h3 id="cookies">Cookies</h3>
+<p>En esta sección, se gestionan las cookies para almacenar datos persistentes entre sesiones. Las cookies permiten guardar información, como el estado de la sesión del usuario o preferencias de la página. Además, se puede realizar una petición a una API y almacenar los datos obtenidos en las cookies para su uso posterior.</p>
+
+<h3 id="sessionstorage">SessionStorage</h3>
+<p>El uso de <code>sessionStorage</code> permite almacenar datos que sólo persisten durante la sesión de navegación. Esta técnica se utiliza para almacenar información temporal, como el estado de la sesión del usuario. Los datos obtenidos de la API pueden ser almacenados temporalmente en <code>sessionStorage</code>, y se pueden recuperar mientras dure la sesión activa.</p>
+
+<h3 id="loginstorage">LoginStorage</h3>
+<p>El sistema de login utiliza almacenamiento en el navegador para gestionar la autenticación. Los datos relacionados con el inicio de sesión, como el estado de autenticación y las credenciales, se almacenan temporalmente para facilitar el acceso durante la sesión activa. Además, se pueden almacenar datos de usuario obtenidos de una API en este método de almacenamiento.</p>
+
+<h3 id="indexeddb">IndexedDB</h3>
+<p>IndexedDB es una base de datos en el navegador que permite almacenar grandes cantidades de datos de manera estructurada. En este apartado, se gestionan datos complejos que no son adecuados para cookies o <code>sessionStorage</code>. También se pueden almacenar datos obtenidos de una API para su consulta o modificación posterior.</p>
+
 <h2>Header</h2>
 <p>La cabecera incluye el título del temario de JavaScript.</p>
 <p>También tiene todos los enlaces de js, favicon, css que necesito</p>
 
 <h2>Navbar</h2>
-<p>En el navbar he añadido los enlaces a la Plantilla 3, la Calculadora, el Conversor y el apartado "String", los cuales solo son visibles después de iniciar sesión.</p>
+<p>En el navbar he añadido los enlaces a la Plantilla 3, la Calculadora, el Conversor, el apartado "String", y el nuevo apartado "Crud", los cuales solo son visibles después de iniciar sesión.</p>
 
 <h2>Body</h2>
 <p>En el body he añadido el contenido de los ejercicios.</p>

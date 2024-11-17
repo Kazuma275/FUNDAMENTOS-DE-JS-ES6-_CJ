@@ -28,12 +28,10 @@ dbRequest.onupgradeneeded = function(event) {
 
 dbRequest.onsuccess = function(event) {
     db = event.target.result;
-    console.log("Base de datos abierta con éxito");
     checkSession();
 };
 
 dbRequest.onerror = function(event) {
-    console.error("Error al abrir la base de datos", event.target.errorCode);
 };
 
 // Función para guardar el estado de inicio de sesión y el nombre de usuario en IndexedDB
@@ -144,6 +142,6 @@ logoutButton.addEventListener("click", function() {
 
     // Redirigir al formulario de login después de un corto retraso
     setTimeout(() => {
-        window.location.href = "./login/index.html"; // Cambia esto a la ruta de tu formulario de login
+        window.location.href = "../index.html"; // Cambia esto a la ruta de tu formulario de login
     }, 2000);
 });

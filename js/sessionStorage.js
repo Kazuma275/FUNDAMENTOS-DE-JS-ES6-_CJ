@@ -38,13 +38,13 @@ function mostrarContenidoPrincipal(username) {
     document.getElementById("P3").style.display = 'block';
     document.getElementById("string").style.display = 'block';
     document.getElementById("indexedb").style.display = 'block';
+    document.getElementById("crud").style.display = 'block';
 
     // Mostrar el botón de cerrar sesión en la barra de navegación
     const logoutLink = document.getElementById("cerrarSesionBtn");
-    logoutLink.style.display = 'block';
     logoutLink.addEventListener("click", function () {
         deleteSession('username');
-        window.location.reload();
+        window.location.href = "../index.html";
     });
 }
 
@@ -66,7 +66,7 @@ document.querySelector(".btn").addEventListener("click", function () {
 
         // Añadimos un delay de 2 segundos antes de mostrar el contenido principal
         setTimeout(function() {
-            mostrarContenidoPrincipal(username);
+            window.location.href = "../login/index.html";
         }, 2000);
 
         // window.location.reload(); // Eliminado para que el timeout se ejecute correctamente
@@ -81,7 +81,7 @@ function iniciarTemporizadorDeSesion() {
         const username = getSession('username');
         if (!username) {
             alert('Tu sesión ha expirado. Por favor, vuelve a iniciar sesión.');
-            window.location.reload();
+            window.location.href = "../index.html";
         }
     }, 5000);
 }

@@ -106,8 +106,6 @@ body {
         color: #1A535C; /* Color del texto al pasar el mouse */
         text-decoration: none; /* Sin subrayado al pasar el mouse */
     }
-    
-    
 
     .form-group {
         display: flex;
@@ -165,6 +163,38 @@ body {
     .dropdown {
         z-index: 10; /* Asegurando que el dropdown esté por encima del main content */
         position: relative; /* Necesario para que z-index funcione */
+    }
+
+    .btn-api {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: auto; /* Ajuste automático según contenido */
+        flex-wrap: wrap;
+        gap: 10px; /* Espacio entre los botones */
+    }
+
+    .btn-api {
+        background-color: #eee; /* Color de fondo de los botones */
+        border: none; /* Sin borde */
+        padding: 0.75rem;
+        font-size: 1rem;
+        border-radius: 1rem;
+        color: #4ECDC4;
+        box-shadow: 0 0.4rem #dfd9d9; /* Sombra de los botones */
+        cursor: pointer; /* Cambiar cursor al pasar por encima */
+        transition: background-color 0.3s ease, transform 0.3s ease; /* Transiciones suaves */
+    }
+    
+    .btn-api:hover {
+        background-color: #4ECDC4; /* Cambia el fondo al verde claro */
+        color: white; /* Texto en blanco para contraste */
+        transform: scale(1.05); /* Efecto de agrandamiento al hacer hover */
+    }
+    
+    .btn-api:active {
+        background-color: #1A535C; /* Fondo más oscuro al hacer clic */
+        transform: scale(0.98); /* Pequeña reducción al hacer clic */
     }
 
     /******************** Strings ********************/
@@ -327,6 +357,13 @@ body {
         font-size: 1.2rem;
         border-radius: 8px;
         display: inline-block;
+    }
+
+    .btn-load img {
+        width: 22px;
+        height: 20px;
+        text-align: center;
+        align-self: center;
     }
 
     .btn-load:hover {
