@@ -151,6 +151,7 @@
   <li><strong>Lista:</strong> Una estructura más flexible que permite insertar y eliminar elementos en cualquier posición. La lista está diseñada para ser modular y puede gestionar una cantidad dinámica de datos.</li>
 </ul>
 
+<img src="img/ck.webp" alt="calculadora" width="1000" height="700">
 
 <h2>Header</h2>
 <p>La cabecera incluye el título del temario de JavaScript.</p>
