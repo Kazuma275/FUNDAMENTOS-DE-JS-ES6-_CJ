@@ -142,6 +142,16 @@
 <h3 id="indexeddb">IndexedDB</h3>
 <p>IndexedDB es una base de datos en el navegador que permite almacenar grandes cantidades de datos de manera estructurada. En este apartado, se gestionan datos complejos que no son adecuados para cookies o <code>sessionStorage</code>. También se pueden almacenar datos obtenidos de una API para su consulta o modificación posterior.</p>
 
+<h3 id="estructura">Nuevo apartado: Estructura</h3>
+<p>He añadido un módulo en JavaScript con funcionalidades para gestionar estructuras de datos dinámicas. Estas estructuras permiten insertar, eliminar y gestionar datos de forma organizada.</p>
+<p>Las estructuras implementadas son las siguientes:</p>
+<ul>
+  <li><strong>Pila:</strong> Una estructura de tipo LIFO (Last In, First Out), donde el último elemento insertado es el primero en salir. Esta funcionalidad permite gestionar datos con métodos como <code>push</code> (insertar) y <code>pop</code> (eliminar).</li>
+  <li><strong>Cola:</strong> Una estructura de tipo FIFO (First In, First Out), donde el primer elemento insertado es el primero en salir. La cola cuenta con métodos como <code>enqueue</code> (insertar) y <code>dequeue</code> (eliminar).</li>
+  <li><strong>Lista:</strong> Una estructura más flexible que permite insertar y eliminar elementos en cualquier posición. La lista está diseñada para ser modular y puede gestionar una cantidad dinámica de datos.</li>
+</ul>
+
+
 <h2>Header</h2>
 <p>La cabecera incluye el título del temario de JavaScript.</p>
 <p>También tiene todos los enlaces de js, favicon, css que necesito</p>
