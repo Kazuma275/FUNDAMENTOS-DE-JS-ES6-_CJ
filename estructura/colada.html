@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+
+    <link rel="stylesheet" href="../css/styles.css">
+
+    <!-- Carga de los módulos JS -->
+    <script defer type="module" src="../components/pilaComponent.js"></script>
+    <script defer type="module" src="../modules/pilaModule.js"></script>
+    <script defer type="module" src="../utils/domHelpers.js"></script>
+
+</head>
+<body>
+
+    <!-- --------HEADER---------- -->
+    <div class="header">
+        <h1>Sergio Ramos Alarcón <img id="sergio" src="../img/sergio.jfif"></h1>
+        <h3>Ejemplos – FUNDAMENTOS DE JS (ES6)</h3>
+        <h4>Desarrollo WEB en entorno cliente</h4>
+        <h5>Plantilla03a</h5> 
+    </div>
+    
+        <!-- ---------MENU----------- -->
+    <div class="topnav">
+        <a href="https://www.w3schools.com/js/default.asp">w3schools</a>
+        <a href="https://es.javascript.info/js">javascript.info</a>
+        <a href="https://developer.mozilla.org/es/docs/Web/JavaScript">MDN</a>
+        <a id="P3" href="https://kazuma275.github.io/Plantilla-03/">Plantilla 03</a>
+    
+        <!-- Dropdown -->
+        <div class="dropdown topnav-dwn">
+            <a id="cookies" href="#" class="dropbtn">Number</a>
+            <div class="dropdown-content">
+                <a href="../calculadora/index.html">Calculadora</a>
+                <a href="../conversor/index.html">Conversor</a>
+            </div>
+        </div>
+    
+        <!-- Dropdown -->
+        <div class="dropdown topnav-dwn">
+            <a id="string" href="#" class="dropbtn">String</a>
+            <div class="dropdown-content">
+                <a href="../string/index.html">String</a>
+                <a href="../api/index.html">Api</a>
+            </div>
+        </div>
+        <!-- Dropdown -->
+        <div class="dropdown topnav-dwn">
+            <a id="indexedb" href="#" class="dropbtn">IndexedDB</a>
+            <div class="dropdown-content">
+                <a href="../matriz/index.html">Matrices</a>
+            </div>
+        </div>
+    
+        <!-- Dropdown -->
+        <div class="dropdown topnav-dwn">
+            <a id="crud" href="#" class="dropbtn">Crud</a>
+            <div class="dropdown-content">
+                <a href="../crud/cookies.html">Cookies</a>
+                <a href="../crud/sessionstorage.html">SessionStorage</a>
+                <a href="../crud/localstorage.html">LocalStorage</a>
+                <a href="../crud/indexeddb.html">IndexedDB</a>
+            </div>
+        </div>
+
+        <!-- Dropdown -->
+        <div class="dropdown topnav-dwn">
+            <a id="estructuras href="#" class="dropbtn">Estructuras</a>
+            <div class="dropdown-content">
+                <a href="../estructura/colada.html">Colada</a>
+                <a href="../estructura/taller.html">Taller</a>
+                <a href="../estructura/tareas.html">Tareas</a>
+            </div>
+        </div>
+    
+        </div>
+            
+        <br/>
+
+    <!-- --------MAIN CONTENT----------- -->
+    <div class="container">
+        <div class="card">
+            <div class="cardTitle"><h3>Gestión de la colada con una Pila</h3></div>
+            <div class="cardBody">
+                <button id="introducirPrenda" class="btn-prenda" style="cursor: pointer;">Introducir Prenda</button>
+                <button id="sacarPrenda" class="btn-prenda" style="cursor: pointer;">Sacar Prenda</button>
+                <ul id="listaPrendas"></ul>
+                <p id="mensajeColada"></p>
+            </div>
+            <div class="cardFooter"><a href="../login/index.html">&gt;&gt; Página Principal</a></div>
+        </div>
+    </div>
+
+    <!-- ---------FOOTER----------- -->
+    <div class="footer">
+        © Sergio Ramos Alarcón
+    </div>
+
+</body>
+</html>

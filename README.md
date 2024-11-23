@@ -16,6 +16,7 @@
   <li><a href="#string-api">String - API</a></li>
   <li><a href="#matriz">Matriz</a></li>
   <li><a href="#crud">Crud</a></li>
+  <li><a href="#poo">Estructura</a></li>
 </ul>
 
 <h2 id="introduccion">Introducción</h2>
@@ -49,15 +50,23 @@
 
 <p>La estructura del proyecto se ha organizado de la siguiente manera, con cada funcionalidad o página separada en su propia carpeta:</p>
 <ul>
-  <li>`/css`: Archivo de estilos CSS</li>
+  <li>`/api`: Archivo HTML para la funcionalidad "API"</li>
+  <li>`/assets`: Directorio con funcionalidades </li>
+  <li>`/fonts`: Directorio con tipografías </li>
+  <li>`/calculadora`: Archivo HTML para la calculadora</li>
+  <li>`/classes`: Directorio JS para las clases</li>
+  <li>`/components`: Directorio con componentes JS</li>
+  <li>`/conversor`: Archivo HTML para el conversor</li>
+  <li>`/crud`: Archivo HTML para el crud</li>
+  <li>`/css`: Archivo CSS para los estilos</li>
   <li>`/js`: Archivos JavaScript</li>
   <li>`/img`: Imágenes</li>
   <li>`/login`: Archivo HTML para hacer el redirect después de iniciar sesión</li>
-  <li>`/calculadora`: Archivo HTML para la calculadora</li>
-  <li>`/conversor`: Archivo HTML para el conversor</li>
   <li>`/string`: Archivo HTML para la funcionalidad "String"</li>
   <li>`/api`: Archivo HTML para la funcionalidad "String - API"</li>
   <li>`/matriz`: Archivo HTML para la funcionalidad "Matriz"</li>
+  <li>`/modulos`: Archivo JS para la funcionalidad de "Estructura"</li>
+  <li>`/utils`: Directorio que contiene ficheros JavaScript </li>
 </ul>
 
 <p>Se ha añadido un nuevo en `/login` -> `index.html` que redirecciona a la página principal de la web tras el login.</p>
